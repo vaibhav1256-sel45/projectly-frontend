@@ -886,7 +886,7 @@ a.brand:hover { text-decoration: none; }
   background: var(--surface-2); border: 1px solid var(--border); border-radius: 14px; outline: 0; transition: border-color 0.15s, box-shadow 0.2s, background 0.15s;
 }
 .jira__desc:focus { background: var(--surface); border-color: var(--accent-strong); box-shadow: 0 0 0 4px var(--primary-ring); }
-.jira__desc--view { white-space: pre-wrap; cursor: text; }
+.jira__desc--view { white-space: pre-wrap; overflow-wrap: anywhere; cursor: text; max-height: 320px; overflow-y: auto; }
 .jira__desc--view:hover:not(.is-frozen) { background: var(--surface); border-color: var(--border-strong); }
 .jira__desc--view.is-frozen { cursor: default; }
 .jira__placeholder { color: color-mix(in srgb, var(--muted) 80%, transparent); }
