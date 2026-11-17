@@ -3,7 +3,7 @@
 export const PROJECT_ROLES = [
   { id: "VIEWER", title: "Viewer", color: "#64748b", can: ["View"] },
   { id: "EDITOR", title: "Editor", color: "#3b82f6", can: ["View", "Edit"] },
-  { id: "DELETOR", title: "DELETOR", color: "#f59e0b", can: ["View", "Delete"] },
+  { id: "DELETOR", title: "Deletor", color: "#f59e0b", can: ["View", "Delete"] },
   { id: "ADMIN", title: "Admin", color: "#10b981", can: ["View", "Edit", "Delete"] },
 ];
 
