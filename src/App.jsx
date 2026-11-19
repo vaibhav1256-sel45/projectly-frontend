@@ -3,6 +3,7 @@ import { getTokens } from "./utils/auth.js";
 import Register from "./pages/Register.jsx";
 import Login from "./pages/Login.jsx";
 import VerifyOtp from "./pages/VerifyOtp.jsx";
+import VerifyEmail from "./pages/VerifyEmail.jsx";
 import Projects from "./pages/Projects.jsx";
 import TaskBoard from "./pages/TaskBoard.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
@@ -16,6 +17,7 @@ export default function App() {
       <Route path="/register" element={<GuestOnly><Register /></GuestOnly>} />
       <Route path="/login" element={<GuestOnly><Login /></GuestOnly>} />
       <Route path="/verify" element={<VerifyOtp />} />
+      <Route path="/verify-email" element={<VerifyEmail />} />
       <Route path="/" element={<Protected><Projects /></Protected>} />
       <Route path="/tasks/:projectId/board" element={<Protected><TaskBoard /></Protected>} />
       <Route path="/tasks/:projectId/dashboard" element={<Protected><Dashboard /></Protected>} />
